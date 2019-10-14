@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 style="text-align: center;">Number Multiplier</h1>
+    <div class = "form">
+        <label for="Number1">First Number</label>
+        <input type="text" id="Number1"><br>
+        <label for="Number2">Second Number</label>
+        <input type="text" id="Number2"><br>
+        <button id="multiply">Multiply</button>
+    </div>
+    <p id="result">Result is</p>
+    <script>
+        var multiplyNumbers = document.getElementById("multiply");
+        var result = document.getElementById("result");
+        function multiply(){
+            var num1 = document.getElementById("Number1").value;
+            var num2 = document.getElementById("Number2").value;
+            var val = num1*num2;
+            result.innerHTML="The result is "+val;
+        } 
+        multiplyNumbers.onclick=multiply;
+    </script>
+</body>
+</html>
